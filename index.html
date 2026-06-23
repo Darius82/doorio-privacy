@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad — Doorio</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+           max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 1.8rem; }
+    code { background: #f0f0f0; padding: 0 .25rem; border-radius: 3px; }
+    .updated { color: #666; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <h1>Política de privacidad de Doorio</h1>
+  <p class="updated">Última actualización: 23 de junio de 2026</p>
+
+  <p>Doorio es una aplicación personal que abre puertas y portales enviando peticiones HTTP a los
+  endpoints que tú mismo configuras. Esta política explica qué datos maneja la app y cómo.</p>
+
+  <h2>Resumen</h2>
+  <p><strong>Doorio no recopila, transmite ni comparte tus datos personales con el desarrollador ni
+  con terceros.</strong> No hay analítica, ni publicidad, ni servidores propios. Todo lo que
+  configuras se guarda únicamente en tu dispositivo.</p>
+
+  <h2>Datos que se almacenan en el dispositivo</h2>
+  <ul>
+    <li><strong>Configuración de tus entradas:</strong> nombre, color, método HTTP, URL del
+    endpoint, cabeceras y cuerpo opcional. Se guardan en una base de datos local del dispositivo.</li>
+    <li><strong>Tokens de autenticación (opcionales):</strong> si una entrada usa un token Bearer,
+    se cifra en reposo mediante el Android Keystore y no abandona el dispositivo.</li>
+    <li><strong>Historial de aperturas:</strong> las últimas aperturas de cada entrada, también
+    en local.</li>
+  </ul>
+  <p>Estos datos no se envían a ningún servidor controlado por el desarrollador y se eliminan al
+  desinstalar la app.</p>
+
+  <h2>Ubicación</h2>
+  <p>Si activas la apertura automática (geofencing), Doorio usa tu ubicación
+  <strong>únicamente en el propio dispositivo</strong> para detectar cuándo llegas a un punto que
+  has definido y abrir esa puerta. La ubicación <strong>no se almacena en remoto ni se transmite</strong>
+  a ningún tercero; la gestiona el sistema operativo para activar el geofence. El permiso de
+  ubicación en segundo plano se usa solo para que la apertura automática funcione con la app cerrada.</p>
+
+  <h2>Conexiones de red</h2>
+  <ul>
+    <li><strong>Tus endpoints:</strong> al abrir una entrada, la app realiza la petición HTTP
+    exclusivamente a la URL que tú has configurado.</li>
+    <li><strong>Mapa:</strong> al elegir un punto en el mapa, se descargan mosaicos de
+    <a href="https://www.openstreetmap.org">OpenStreetMap</a> desde sus servidores, sujeto a la
+    política de privacidad de OpenStreetMap.</li>
+  </ul>
+
+  <h2>Permisos</h2>
+  <ul>
+    <li><code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code>: enviar las peticiones de apertura y cargar el mapa.</li>
+    <li><code>ACCESS_FINE/COARSE/BACKGROUND_LOCATION</code>: apertura automática por geofencing.</li>
+    <li><code>POST_NOTIFICATIONS</code>: avisar cuando una puerta se abre automáticamente.</li>
+    <li><code>RECEIVE_BOOT_COMPLETED</code>: volver a registrar los geofences tras reiniciar el dispositivo.</li>
+  </ul>
+
+  <h2>Menores</h2>
+  <p>Doorio no está dirigida a menores y no recopila datos de ninguna persona.</p>
+
+  <h2>Cambios</h2>
+  <p>Si esta política cambia, se actualizará la fecha de arriba.</p>
+
+  <h2>Contacto</h2>
+  <p>Para cualquier duda: <a href="mailto:cuchifletas@proton.me">cuchifletas@proton.me</a></p>
+</body>
+</html>
